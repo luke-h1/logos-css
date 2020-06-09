@@ -1,0 +1,100 @@
+
+.navbar { 
+    width: 100% ;  
+} 
+
+body { 
+    margin: 0 ; 
+}
+
+header { 
+    background: white ; 
+} 
+
+
+header::after { 
+    content: '' ; 
+    display: table ; 
+    clear: both ; 
+}
+
+
+.logo { 
+    float: left ; 
+    padding: 10px  0 ;  
+}
+
+nav { 
+    float: left ; 
+}
+
+nav ul { 
+    margin: 0 ; 
+    padding: 0 ; 
+    list-style: none ; 
+}
+
+
+nav li { 
+    display: inline-block ; 
+    margin-left: 50px ; 
+    padding-top: 20px ; 
+    position: relative;
+}
+
+nav a { 
+    color: #444 ; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    font-size: 15px ; 
+}
+
+
+nav a:hover { 
+    color: #000 ; 
+}
+
+
+nav a::before { 
+    content: '' ; 
+    display: block ; 
+    height: 5px ; 
+    background-color: #444 ; 
+    position: absolute; 
+    top: 0 ; 
+    width: 0% ;  
+    transition: all ease-in-out 500ms ; 
+}
+
+
+nav a:hover::before { 
+    width: 100% ; 
+}
+
+.react { 
+    width: 10% ; 
+}
+
+.vue { 
+    width: 10% ; 
+}
+
+.node { 
+    width: 10% ; 
+}
+
+
+.angular { 
+    width: 10% ; 
+}
+
+img { 
+    padding-left: auto ; 
+    padding-right: auto ; 
+    text-align: center ; 
+}
+
+.main { 
+    text-align: center; 
+    border:2px solid black ; 
+} 
